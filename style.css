@@ -716,3 +716,149 @@ body.light-mode footer {
         font-size: 1.45rem;
     }
 }
+
+/* =================================
+   MOBILE RESPONSIVE FIX
+================================= */
+
+@media screen and (max-width: 600px) {
+
+    /* NAVBAR */
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    /* NAVIGATION MENU */
+    .nav-links {
+        order: 3;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        gap: 20px;
+        padding: 8px 3px;
+        scrollbar-width: none;
+    }
+
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    /* THEME BUTTON */
+    .theme-btn {
+        order: 2;
+        padding: 9px 12px;
+        font-size: 14px;
+        border-radius: 25px;
+        white-space: nowrap;
+    }
+
+    .theme-btn:hover {
+        transform: none;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        min-height: auto;
+        padding: 45px 18px;
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center;
+    }
+
+    /* PROFILE IMAGE */
+    .hero-image img {
+        width: 210px;
+        height: 210px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    /* HERO TEXT */
+    .hero-content h2 {
+        font-size: 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content h3 {
+        font-size: 17px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    /* BUTTONS */
+    .hero-buttons {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .btn {
+        padding: 11px 17px;
+        font-size: 13px;
+    }
+
+    /* SECTIONS */
+    .section {
+        padding: 45px 15px;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+    /* SKILLS */
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* PROJECTS */
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* ABOUT */
+    .about-card {
+        padding: 20px;
+    }
+
+    .about-info {
+        grid-template-columns: 1fr;
+    }
+
+    /* CONTACT */
+    .contact-card {
+        padding: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 25px 12px;
+        font-size: 13px;
+    }
+}
+
+/* PREVENT HORIZONTAL OVERFLOW */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
