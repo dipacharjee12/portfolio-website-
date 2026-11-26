@@ -862,3 +862,107 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+
+/* FIX LIGHT MODE BUTTON ON MOBILE */
+
+.theme-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 45px;
+    height: 45px;
+    padding: 0 15px;
+
+    border-radius: 30px;
+    font-size: 16px;
+
+    transform: none !important;
+    transition: background 0.3s ease;
+}
+
+/* REMOVE ROTATION ON TOUCH DEVICES */
+
+@media (hover: none) {
+    .theme-btn:hover {
+        transform: none !important;
+    }
+
+    .theme-btn:active {
+        transform: scale(0.96) !important;
+    }
+}
+
+/* MOBILE BUTTON POSITION */
+
+@media screen and (max-width: 600px) {
+    .theme-btn {
+        width: auto;
+        height: 40px;
+        padding: 0 14px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+}
+/* =================================
+   LAPTOP PROJECT SECTION FIX
+================================= */
+
+/* PROJECT SECTION FINAL FIX */
+
+#projects {
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+}
+
+.projects-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 25px;
+    overflow-wrap: anywhere;
+}
+
+.project-card h3,
+.project-card p {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+}
+  }
+
+
+
+  /* VIP HELLO LAPTOP */
+
+.laptop-hello {
+    display: inline-flex;
+    width: 65px;
+    height: 42px;
+    background: linear-gradient(135deg, #9333ea, #06b6d4);
+    border: 3px solid #a855f7;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 8px;
+    box-shadow: 0 0 15px #a855f7;
+}
+
